@@ -1,0 +1,7 @@
+echo "# CURSO-CSS-Y-HTML" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Leonel-Javier-Calleja-Hernandez/CURSO-CSS-Y-HTML.git
+git push -u origin main
