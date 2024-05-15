@@ -32,7 +32,35 @@
         <img src="../../../STYLE Teoria/img/imagenes-para-fondo-de-whatsapp-bonitas.jpg" alt="">
     </figure>
     <h1>figure y figcaption</h1>
-<p> <b>figure</b> es un nuevo tipo de caja de HTML5 con contenido semántico propio orientado a contener imágenes, con la interesante posibilidad de añadir un pie de imágen <b>figcaption</b> vinculada a ésta. De esta manera el navegador y cualquier robot que acceda a nuestra página conocerá la naturaleza del contenido que contiene este tipo de bloque y su información asociada.</p>
+<p> <b>( figure )</b> es un nuevo tipo de caja de HTML5 con contenido semántico propio orientado a contener imágenes, con la interesante posibilidad de añadir un pie de imágen <b>( figcaption )</b> vinculada a ésta. De esta manera el navegador y cualquier robot que acceda a nuestra página conocerá la naturaleza del contenido que contiene este tipo de bloque y su información asociada.</p>
+<h2>ejemplo</h2>
+<figure>
+    <img src="../../img/Captura de pantalla 2024-05-15 150058.png" alt="">
+</figure>
+<h2>codigo</h2>
+<!-- <figure>
 
-    </body>
+    <img src="img/imagen.png">
+
+    <figcaption>
+        Este texto es el <b>figcaption</b> de esta imagen
+    </figcaption>
+
+</figure> -->
+
+<h1>NOTA</h1>
+<p> Es IMPORTANTE saber que las cajas de tipo figure no son display:"block" (como el resto de cajas), sino que son "inline-block", por lo que los siguientes elementos HTML de tipo "inline" o "inline-block" se ubicarán en la misma fila.</p>
+<figure>donde va la imagen
+    <img src="../../../STYLE Teoria/img/imagenes-para-fondo-de-whatsapp-bonitas.jpg" alt="la imagen">
+    <figcaption>(pie de imagen) </figcaption>
+</figure>
+<h2>la dimenciones para css</h2>
+<pre>img{
+    max-width:100%;
+    vertical-align:top;
+ }</pre>
+    
+
+
+</body>
 </html>
