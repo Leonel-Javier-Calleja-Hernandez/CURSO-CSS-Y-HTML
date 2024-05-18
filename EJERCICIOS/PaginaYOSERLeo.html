@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio2</title>
+    <style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+        body{
+            font-family: 'Anton', sans-serif;
+            animation-name: animacion1;
+            animation-duration: 6s;
+            background-color: rgb(255, 0, 0);
+            display: flex;
+            flex-direction: column;
+        }
+        @keyframes animacion1 {
+            100%{background-color: red;}
+            50%{background-color: rgb(255, 255, 255);}
+        }
+
+        header{
+            display: flex;
+            font-size: 100%;
+            text-shadow: 0px 0px 10px rgb(0, 0, 0);
+            line-height: 70px;
+            color: rgb(255, 255, 255);
+            -webkit-text-stroke: 1px rgb(0, 0, 0);
+            border-radius: 20px ;
+            background-image: url(./imgYT/6\ sin\ título_20240113220829.png);
+            background-size: 100%;
+            background-position: 0px -145px;
+            background-repeat: no-repeat;
+            gap: 900px;
+        }
+        header img{
+            width: 7%;
+            height: 7%;
+        }
+        article{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 30%;
+        }
+        figure img{
+            border-radius: 20px;
+            animation-name: imagen1;
+            animation-duration: 6s;
+            width: 400px;
+        }
+        @keyframes imagen1 {
+            0%{width: 100px; left: 700px;position: relative;}
+            10%{left: 0px;}
+            95%{width: 390px;left: 0px;}
+            100%{width: 400px;left: 0px;}
+            
+        }
+        /* pie de la pagina */
+        footer{
+            /* border: 10px solid rgb(255, 255, 255); */
+            background-position: -100px;
+            background-color: rgb(255, 255, 255);
+            margin-top: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img id="logo1" src="./imgYT/PhotoRoom-20231230_131915.png" alt="">
+        <!-- <h1>BIENVENIDO A MI PAGINA :D</h1> -->
+        <img src="./imgYT/PhotoRoom-20240102_173426.png" alt="">
+    </header>
+    <article>
+        <figure>
+            <img src="./img/istockphoto-1408955173-612x612.jpg" alt="">
+        </figure>
+    </article>
+    <article>
+        <figure>
+            <img src="./img/istockphoto-1408955173-612x612.jpg" alt="">
+        </figure>
+    </article>
+    <article>
+        <figure>
+            <img src="./img/istockphoto-1408955173-612x612.jpg" alt="">
+        </figure>
+    </article>
+    <article>
+        <figure>
+            <img src="./img/istockphoto-1408955173-612x612.jpg" alt="">
+        </figure>
+    </article>
+    <footer>
+        <!-- <img src="./imgYT/PhotoRoom-20240102_173426.png" alt=""> -->
+        <p>YOSERLeo YT</p>
+    </footer>    
+</body>
+</html>

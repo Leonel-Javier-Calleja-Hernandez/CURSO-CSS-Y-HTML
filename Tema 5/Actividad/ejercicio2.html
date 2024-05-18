@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ejercicio2</title>
     <style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
         body{
-            font-family: fantasy;
+            font-family: 'Anton', sans-serif;
             animation-name: animacion1;
-            animation-duration: 60s;
+            animation-duration: 6s;
+            background-color: rgb(255, 0, 0);
         }
         @keyframes animacion1 {
-            50%{background-color: red;background-color: aqua;background-color: blue;}
+            100%{background-color: red;}
+            50%{background-color: rgb(255, 255, 255);}
         }
 
         header{
@@ -30,14 +33,26 @@
         header img{
             width: 15%;
         }
-        figure {
+        article{
             display: flex;
             justify-content: center;
-          
+            width: 100%;
+            height: 30%;
         }
         figure img{
             border-radius: 20px;
+            animation-name: imagen1;
+            animation-duration: 6s;
+            width: 400px;
         }
+        @keyframes imagen1 {
+            0%{width: 100px; left: 700px;position: relative;}
+            10%{left: 0px;}
+            95%{width: 390px;left: 0px;}
+            100%{width: 400px;left: 0px;}
+            
+        }
+
     </style>
 </head>
 <body>
