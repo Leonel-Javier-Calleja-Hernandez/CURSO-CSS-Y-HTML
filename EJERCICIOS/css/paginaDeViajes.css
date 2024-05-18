@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+body{
+    color: aliceblue;
+    background-image: url(../img/PhotoRoom-20240517_140857.png);
+    /* background-position: ; */
+    background-repeat: no-repeat;
+    background-size: 100% 500px;
+    font-family: 'Anton', sans-serif;
+    background-position: -15px 100px;
+    background-color: #F8F4CE;
+
+
+}
+header{
+    /* display: block;
+    position: fixed; */
+    color: black;
+    width: 100%;
+    height: 15%;
+    background-color: #F7BF1B;
+    display: flex;
+    border-radius: 50px;
+    justify-content: space-between;
+}
+#logo{
+    padding: 5px;
+    border-radius: 67px;
+    width: 7%;
+}
+#pestañas-Superior{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 90px;
+}
+.linkSuperior{
+color: #051F52;
+padding: 10px;
+margin: 30px;
+text-decoration: none;
+}
+#enlaces-Superior .linkSuperior:hover{
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1px #051F52;
+}
+.linkSuperior2{
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 4px rgb(0, 0, 0);
+}
+
+/* contenido del centro */
+
+#Centro{
+    height: 500px;
+}
+.TextoCentro{
+    display: flex;
+    justify-content: center;
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+    -webkit-text-stroke: 1px #000000;
+    font-size: 45px;
+}
+#ContenidoCentral{
+    display: flex;
+    justify-content: center;
+}
+#ContenidoCentral a{
+color: #051F52; 
+margin: 10px;
+-webkit-text-stroke: 1px white;
+ font-size: 150%;
+ text-decoration: none;
+}
+#ContenidoCentral a:hover{
+    -webkit-text-stroke: 1px #051F52;
+    color: rgb(255, 255, 255);
+}
+/* imagenes de los lugeres a viajar */
+#imagenesLugares{
+    background-color: transparent;
+    display: flex;
+    height: 280px;
+    justify-content: center;
+}
+#imagenesLugares img {
+    margin: 10px 10px 0px 10px;
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+}
+figcaption{
+    display: flex;
+    justify-content: center;
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+    -webkit-text-stroke: 1px #000000;
+    border-radius: 30px;
+    background-color: #F7BF1B;
+    font-size: 30px;
+}
+/* pie de la pagina */
+footer{
+    line-height: 40px;
+    border-radius: 20px;
+    height: 50px;
+    background-color: transparent;
+    justify-content: space-between;
+    line-height: 115px;
+    display: flex;   
+}
+footer p{
+    margin: 0px 0px 0px 30px;
+    -webkit-text-stroke: 1px #000000;
+}
+footer img{
+    width: 100px;
+    height: 100px;
+}
