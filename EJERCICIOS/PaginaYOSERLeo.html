@@ -12,8 +12,7 @@
             animation-name: animacion1;
             animation-duration: 6s;
             background-color: rgb(255, 0, 0);
-            display: flex;
-            flex-direction: column;
+            /* bajar el footer */
         }
         @keyframes animacion1 {
             100%{background-color: red;}
@@ -46,7 +45,7 @@
         }
         figure img{
             border-radius: 20px;
-            animation-name: imagen1;
+            /* animation-name: imagen1; */
             animation-duration: 6s;
             width: 400px;
         }
@@ -57,12 +56,14 @@
             100%{width: 400px;left: 0px;}
             
         }
+
         /* pie de la pagina */
         footer{
-            /* border: 10px solid rgb(255, 255, 255); */
-            background-position: -100px;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            height: 60px;
             background-color: rgb(255, 255, 255);
-            margin-top: auto;
         }
 
     </style>
@@ -73,26 +74,28 @@
         <!-- <h1>BIENVENIDO A MI PAGINA :D</h1> -->
         <img src="./imgYT/PhotoRoom-20240102_173426.png" alt="">
     </header>
-    <article>
-        <figure>
-            <img src="./img/istockphoto-1408955173-612x612.jpg" alt="">
-        </figure>
-    </article>
-    <article>
-        <figure>
-            <img src="./img/istockphoto-1408955173-612x612.jpg" alt="">
-        </figure>
-    </article>
-    <article>
-        <figure>
-            <img src="./img/istockphoto-1408955173-612x612.jpg" alt="">
-        </figure>
-    </article>
-    <article>
-        <figure>
-            <img src="./img/istockphoto-1408955173-612x612.jpg" alt="">
-        </figure>
-    </article>
+    <main>
+        <article>
+            <figure>
+                <img src="./img/istockphoto-1408955173-612x612.jpg" alt="">
+            </figure>
+        </article>
+        <article>
+            <figure>
+                <img src="./img/istockphoto-1408955173-612x612.jpg" alt="">
+            </figure>
+        </article>
+        <article>
+            <figure>
+                <img src="./img/istockphoto-1408955173-612x612.jpg" alt="">
+            </figure>
+        </article>
+        <article>
+            <figure>
+                <img src="./img/istockphoto-1408955173-612x612.jpg" alt="">
+            </figure>
+        </article>
+    </main>
     <footer>
         <!-- <img src="./imgYT/PhotoRoom-20240102_173426.png" alt=""> -->
         <p>YOSERLeo YT</p>
