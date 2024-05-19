@@ -37,6 +37,7 @@
             width: 7%;
             height: 7%;
         }
+        /* contenido de la pagina  */
         article{
             display: flex;
             justify-content: center;
@@ -45,7 +46,8 @@
         }
         figure img{
             border-radius: 20px;
-            /* animation-name: imagen1; */
+            border: 2px solid rgb(0, 0, 0);
+            animation-name: imagen1;
             animation-duration: 6s;
             width: 400px;
         }
@@ -56,49 +58,71 @@
             100%{width: 400px;left: 0px;}
             
         }
+        figcaption{
+            display: flex;
+            justify-content: center;
+            animation-name: textoVideo;
+            animation-duration: 6s;
+            text-shadow: 0px 0px 5px rgb(255, 255, 255);
+            color: rgb(255, 255, 255);
+            -webkit-text-stroke: 1px rgb(0, 0, 0);
+            font-size: 18px;
+        }
+        @keyframes textoVideo {
+            50%{color: rgb(255, 0, 0);}
+        }
+        /* logo canal */
+        #cajaLogoCanal a{
+            display: flex;
+            justify-content: center;
+        }
+        #logo1{
+            width: 10%;
+            height: 10%;
+        }
 
         /* pie de la pagina */
         footer{
             width: 100%;
             position: absolute;
+            top: 100vh;
             left: 0;
-            height: 60px;
+            height: 100px;
             background-color: rgb(255, 255, 255);
+            display: flex;
+            gap: 80%;
+            line-height: 80px;
         }
-
+        footer p{
+            font-size: 20px;
+        }
+        footer img{
+            width: 10%;
+            height: 90%;
+        }
     </style>
 </head>
 <body>
     <header>
-        <img id="logo1" src="./imgYT/PhotoRoom-20231230_131915.png" alt="">
+        <img src="./imgYT/PhotoRoom-20231230_131915.png" alt="">
         <!-- <h1>BIENVENIDO A MI PAGINA :D</h1> -->
-        <img src="./imgYT/PhotoRoom-20240102_173426.png" alt="">
     </header>
     <main>
         <article>
             <figure>
-                <img src="./img/istockphoto-1408955173-612x612.jpg" alt="">
+                <img src="./imgYT/miniatura video actual.png" alt="">
+                <figcaption>Mi ultimo video</figcaption>
             </figure>
         </article>
-        <article>
-            <figure>
-                <img src="./img/istockphoto-1408955173-612x612.jpg" alt="">
-            </figure>
-        </article>
-        <article>
-            <figure>
-                <img src="./img/istockphoto-1408955173-612x612.jpg" alt="">
-            </figure>
-        </article>
-        <article>
-            <figure>
-                <img src="./img/istockphoto-1408955173-612x612.jpg" alt="">
-            </figure>
-        </article>
+        <div id="cajaLogoCanal">
+            <a href="">
+            <img id="logo1" src="./imgYT/PhotoRoom-20231230_131915.png" alt="">
+            </a>
+        </div>
     </main>
     <footer>
-        <!-- <img src="./imgYT/PhotoRoom-20240102_173426.png" alt=""> -->
-        <p>YOSERLeo YT</p>
+        <p>ID: YOSERLeoYT</p>
+        <img src="./imgYT/PhotoRoom-20240102_173426.png" alt="">
     </footer>    
 </body>
 </html>
