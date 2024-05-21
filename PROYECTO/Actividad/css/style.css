@@ -1,0 +1,25 @@
+nav li{
+    display: inline-block;
+    background-color: gray;
+    padding: 4px 70px;
+    text-align: center;
+    cursor: default;
+
+}
+ul{
+    padding: 0px;
+    font-size: 20px;
+    color: silver ;
+}
+a{
+    color: orange;
+    text-decoration: none;
+    font-size: 20px;
+}
+a:hover{
+    color: rgb(255, 255, 255);
+}
+#contenido{
+    margin:0 auto;
+    width: 1000px;
+}
