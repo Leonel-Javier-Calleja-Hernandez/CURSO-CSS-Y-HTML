@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordes redondeados(CSS3)</title>
+    <link rel="icon" href="../../EJERCICIOS/imgYT/5.ico">
+    <style>
+        body{
+            width: 1200px;
+        }
+        #linea3{
+            border-width:4px;
+            /* grosor de la línea */
+            border-style:dotted;
+            /* tipo de línea */
+            border-color:blue;
+            /* el color */
+            width:50%;
+            /* la anchura */
+        }
+        #caja1{
+            width: 100%;
+            height: 30%;
+            border-left: dotted 4px red;
+            border-right: solid 4px chocolate;
+        }
+        #caja2{ 
+            position: relative;
+            left: 50%;
+            width: 100px;
+            height: 100px;
+            border-top: 5px solid red;
+            /* linea arriba */
+            border-bottom: 5px dotted green;
+            /* linea abajo */
+            border-right: 5px dashed #3C5391;
+            /* linea derecha */
+            border-left: 5px inset orange;
+            /* linea izquierda */
+        }
+    </style>
+</head>
+<body>
+    <h1>Bordes redondeados(CSS3)</h1>
+    <h2>lineas HORIZONTALES ↔️</h2>
+    <p>Para crear una línea horizontal la forma fácil y rápida es utilizar la etiqueta <hr>, que no se cierra y que crea una línea horizontal simple.
+        <hr id="linea3">:
+        
+        
+        
+        Esta etiqueta admite algunas características CSS como el grosor de la línea (border-width), la anchura (width), el color (border-color) o el tipo de línea (border-style).
+        </p>
+<hr>:
+<h2>lineas VERTICALES ↕️</h2>
+<p>
+    Para crear líneas verticales tenemos que definir uno de los 4 bordes que tiene una caja (div), utilizando una (o varias) de estas propiedades:
+</p>
+<p>1.primero la direccion de el borde </p>
+<p> border-top: <br>
+    border-bottom: <br>
+    border-right: <br>
+    border-left <br></p>
+<p>2.Su estilo</p>
+<p>
+solid <br>
+dotted <br>
+dashed <br>
+inset <br>
+</p>
+<p>3.Su grosor por con px <br></p>
+<p>4.Su color</p>
+<div id="caja1">
+    <div id="caja2"></div>
+</div>
+</body>
+</html>
