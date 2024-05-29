@@ -10,25 +10,58 @@
             height: 500px;
             background-color: #ff0000;
             border: double 3px blueviolet;
+            left: 0px;
+            right: 0px;
+            margin: auto;
+            border-top-left-radius:30px ;
         }
         #caja2{
-            border-top: ridge 5px rgb(0, 234, 255);
+            border-top: dotted 5px rgb(0, 234, 255);
             border-radius: 20px 3px 5px 10px;
             position: relative;
             top: 50%;
             left: 50%;
             padding: 10px;
             background-color: rgb(84, 0, 0);
-            width: 1px;
-            height: 1px;
+            width: 40px;
+            height: 40px;
+        }
+        #caja3{
+            background-color: blueviolet;
+            border-top-right-radius: 4px;
+            border-bottom-left-radius: 10px;
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            margin: auto;
+            text-align: center;
+            line-height: 300px;
+        }
+        #circulo{
+            background-color: yellow;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 200px;
+            animation-name: circuloMovimiento;
+            animation-duration: 10s;
+            position: absolute;
+            left: 0px;right: 0px;margin: auto;
+        }
+        @keyframes circuloMovimiento {
+            0%{background-color: #ff0000;left: -1200px;}
+            50%{left: 0px;right: 0px;margin: auto;}
         }
     </style>
 </head>
 <body>
-    hola
     <div id="caja1">
         <div id="caja2"></div>
     </div>
-    
+    <div id="caja3">caja 3</div>
+    <div id="circulo">CIRCULO</div>
 </body>
 </html>
