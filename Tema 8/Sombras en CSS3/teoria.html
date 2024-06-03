@@ -8,14 +8,48 @@
 #div1{
     width: 100px;
     height: 100px;
-    box-shadow: 0px 0px 1px red;
+    box-shadow: 0px 0px 15px red;
+}
+#div2{
+    width: 100px;
+    height: 100px;
+    background-color: yellowgreen;
+    box-shadow: 40px 40px 5px rgb(74, 74, 74) inset;
+}
+#text-shadow{
+    text-shadow: 3px 3px 10px blue;
+    font-size: 50px;
+}
+#multiples_Sombras{
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    box-shadow: 1px 1px 10px red,1px 1px 10px red inset;
 }
     </style>
 </head>
 <body>
     <h1>SOMBRAS</h1>
-    <h2>Sombras de div (cajas)</h2>
-    <p> la sombra aplicada a <div>, zonas o secciones del html utilizamos la propiedad box-shadow.</p>
-    <div id="div1">caja1</div>
+    <h2>SOMBRAS DE CAJAS HTML</h2>
+    <ol>
+        <li>
+            El primer valor (10px) es la separación horizontal de la sombra (hacia la derecha, ya que es positivo).</li>
+        <li>El segundo valor (10px) es la separación vertical de la sombra (hacia abajo, ya que es positivo).</li>
+        <li>El tercer valor (5px) es la suavidad de la sombra.</li>
+        <li>El último valor (gray) es el color de la sombra.</li>
+    </ol>
+    <h3>Sombras Externas</h3>
+    <p> Sombras para zonas del HTML div,article etc...la sombra aplicada a div, zonas o secciones del html utilizamos la propiedad box-shadow.</p>
+    <div id="div1">sombra externa</div>
+    <button><a href="https://html6.es/t13_sombras.html#punto1">Sombra de div (cajas)</a></button>
+    <h3>sombras Internas</h3>
+    <p>Para crear sombras internas únicamente tenemos que añadir el valor inset al final de 'box-shadow':</p>
+    <div id="div2">sombra interna con "inset"</div>
+    <h2>SOMBRA EN TEXT</h2>
+    <p>En el caso de las sombras en textos utilizamos la etiqueta 'text-shadow</p>
+    <div id="text-shadow">TEXT DENTRO DE UN DIV SOMBRA</div>
+    <h2>Múltiples sombras en el mismo elemento</h2>
+    <p>Múltiples sombras en el mismo elemento</p>
+    <div id="multiples_Sombras"></div>
 </body>
 </html>
