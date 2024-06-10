@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../STYLE Teoria/style.css">
+    <style>
+        #color{
+            background-color: yellow;
+            width: 500px;
+            height: 500px;
+        }
+        #transparencia{
+            background-color: rgba(255, 0, 0, 0.192);
+            width: 500px;
+            height: 500px;
+        }
+        #imagen_Fondo{
+            background:url(../../PROYECTO/Actividad/img/iconol3.png) ;
+            width: 500px;
+            height: 500px;
+        }
+        #no_Repetir{
+            background:url(../../PROYECTO/Actividad/img/iconol3.png) ;
+            width: 500px;
+            height: 500px;
+            background-repeat:no-repeat;
+        }
+    </style>
+</head>
+<body>
+<h1>FONDO</h1>
+    <h2>1.COLOR</h2>
+    <p>background-color:"el color"</p>
+    <div id="color"></div>
+    <h2>2.TRANSPARENCIA</h2>
+    <p>Si deseamos especificar un color con un determinado índice de transparencia y queremos utilizar el código de color RGB,en la que el 4º valor (0.4 en el ejemplo anterior) es la cantidad de transparencia (siendo 0 la transparencia total y 1 la opacidad total).</p>
+    <p> background-color:rgba(255,255,0,0.4);</p>
+    <div id="transparencia"></div>
+    <h2>3.Imagen de fondo</h2>
+    <p>Si además queremos añadir una imagen de fondo (para todo el <body>, o únicamente como fondo de un <div>), usaremos la propiedad: background-url:</p>
+    <div id="imagen_Fondo"></div>
+    <h2>4.QUE NO SE REPITAN</h2>
+    <p>Si no añadimos ningún otro parámetro la imagen se irá repitiendo hasta ocupar toda la ventana html (tipo mosaico). Si por el contrario únicamente queremos que se repita una sola vez (horizontal o verticalmente), tenemos que utilizar la propiedad background-repeat:</p>
+    <h3>valores para background-repeat</h3>
+    <p>
+        no-repeat: la imagen no se repite, se añade sólo una copia de la imagen.
+        <br>
+        repeat-x: la imagen se repite sólo horizontalmente, creando una única cenefa horizontal en la parte superior de la pantalla.
+        <br>
+        repeat-y: la imagen se repite sólo verticalmente, creando una cenefa vertical en la parte izquierda de la pantalla.</p>
+    <div id="no_Repetir"></div>
+    <h2>Superposición de múltiples imágenes como fondo</h2>
+    <p>se pueden poner varia imagenes como si fueran capas
+        <br>
+        body{
+            background:url('../img/css.png'), url('../img/rayas3.png'), url('../img/infantil.gif');
+          }
+    </p>
+    <button>
+        <a href="https://html6.es/ejemplo3.html">ejemplo capas en fondo</a>
+    </button>
+    <div></div>
+    <h2>TENER UNA IMAGEN DE FONDO FIJA</h2>
+    <p> esto lo que hara es que el fondo no se nueva de su posicion si el usuario baja la pagina
+        <br> background-attachment:fixed;</p>
+    <h2>IMAGEN ADACTABLE AL TAMAÑO DE EL DIV</h2>
+    <p>
+        Tener una imagen adaptable de fondo que se adaptará al espacio del div donde se ubique.        
+        <br>
+        background-size:cover;</p>
+</body>
+</html>
