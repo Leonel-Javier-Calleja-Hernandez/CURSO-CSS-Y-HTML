@@ -1,6 +1,12 @@
+body{
+    background: url(../img/imagenDeFondo.jpg);
+    background-repeat: no-repeat;
+    background-size: 1700px 500px;
+    background-color: #fffe65;
+}
 nav li{
     display: inline-block;
-    background-color: gray;
+    background-color: rgba(128, 128, 128, 0);
     padding: 4px 70px;
     text-align: center;
     cursor: default;
@@ -9,15 +15,17 @@ nav li{
 ul{
     padding: 0px;
     font-size: 20px;
-    color: silver ;
+    color: #e79e37 ;
+    text-shadow: 0px 0px 10px #cd3301;
 }
 a{
-    color: orange;
+    color: #cd3301;
     text-decoration: none;
     font-size: 20px;
 }
 a:hover{
     color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 15px #000000;
 }
 #contenido{
     margin:0 auto;
